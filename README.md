@@ -3,7 +3,7 @@
 
 ```js
 
-const async = require('async-wrapped')
+const async = require('awaitable-async')
 
 try {
 
