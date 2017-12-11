@@ -1,5 +1,7 @@
 
-# async-wrapped
+# Awaitable Async
+
+Every method in **async** wrapped in promises.
 
 ```js
 
