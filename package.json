@@ -1,6 +1,6 @@
 {
   "name": "awaitable-async",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Async wrapped with promises",
   "main": "index.js",
   "scripts": {

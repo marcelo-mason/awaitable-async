@@ -464,9 +464,9 @@ class AsyncWrapped {
       })
     })
   } 
-  async during(test, fn, test) {    
+  async during(test, fn) {    
     return new Promise(async (resolve, reject) => { 
-      async.during(test, fn, test, (err, res) => {
+      async.during(test, fn, (err, res) => {
         if (err) { 
           reject()
         } else {
