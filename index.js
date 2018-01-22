@@ -5,7 +5,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.concat(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -16,7 +16,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.concatLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -27,7 +27,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.detect(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -38,7 +38,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.detectLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -49,7 +49,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.detectSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -60,7 +60,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.each(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -71,7 +71,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.eachLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -82,7 +82,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.eachOf(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -93,7 +93,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.eachOfLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -104,7 +104,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.eachSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -115,7 +115,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.eachOfSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -126,7 +126,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.every(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -137,7 +137,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.everyLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -148,7 +148,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.everySeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -159,7 +159,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.filter(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -170,7 +170,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.filterLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -181,7 +181,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.filterSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -192,7 +192,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.groupBy(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -203,7 +203,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.groupByLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -214,7 +214,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.groupBySeries(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -225,7 +225,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.map(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -236,7 +236,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.mapLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -247,7 +247,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.mapSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -258,7 +258,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.mapValues(obj, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -269,7 +269,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.mapValuesLimit(obj, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -280,7 +280,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.mapValuesSeries(obj, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -291,7 +291,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.reduce(coll, memo, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -302,7 +302,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.reduceRight(coll, memo, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -313,7 +313,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.reject(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -324,7 +324,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.rejectLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -335,7 +335,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.rejectSeries(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -346,7 +346,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.some(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -357,7 +357,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.someLimit(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -368,7 +368,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.someSeries(coll, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -379,7 +379,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.sortBy(coll, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -390,7 +390,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.transform(coll, accumulator, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -407,7 +407,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.auto(tasks, concurrency, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -418,7 +418,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.autoInject(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -435,7 +435,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.doDuring(fn, test, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -446,7 +446,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.doUntil(iteratee, test, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -457,7 +457,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.doWhilst(iteratee, test, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -468,7 +468,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.during(test, fn, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -479,7 +479,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.forever(fn, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -490,7 +490,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.parallel(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -501,7 +501,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.parallelLimit(tasks, limit, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -518,7 +518,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.race(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -529,7 +529,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.retry(opts, task, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -540,7 +540,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.retryable(opts, task, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -554,7 +554,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.series(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -565,7 +565,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.times(n, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -576,7 +576,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.timesLimit(count, limit, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -587,7 +587,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.timesSeries(n, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -598,7 +598,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.tryEach(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -609,7 +609,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.until(test, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -620,7 +620,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.waterfall(tasks, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }
@@ -631,7 +631,7 @@ class AsyncWrapped {
     return new Promise(async (resolve, reject) => { 
       async.whilst(test, iteratee, (err, res) => {
         if (err) { 
-          reject()
+          reject(err)
         } else {
           resolve(res)
         }

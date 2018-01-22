@@ -1,6 +1,6 @@
 {
   "name": "awaitable-async",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Async wrapped with promises",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "async",
     "caolan",
     "wrapped",
+    "await",
     "promises"
   ],
   "author": "Marcelo Mason",
