@@ -287,9 +287,9 @@ class AsyncWrapped {
       })
     })
   } 
-  async reduce(coll, memo, limit, iteratee) {    
+  async reduce(coll, memo, iteratee) {    
     return new Promise(async (resolve, reject) => { 
-      async.reduce(coll, memo, limit, iteratee, (err, res) => {
+      async.reduce(coll, memo, iteratee, (err, res) => {
         if (err) { 
           reject(err)
         } else {
@@ -298,9 +298,9 @@ class AsyncWrapped {
       })
     })
   }
-  async reduceRight(coll, memo, limit, iteratee) {    
+  async reduceRight(coll, memo, iteratee) {    
     return new Promise(async (resolve, reject) => { 
-      async.reduceRight(coll, memo, limit, iteratee, (err, res) => {
+      async.reduceRight(coll, memo, iteratee, (err, res) => {
         if (err) { 
           reject(err)
         } else {
